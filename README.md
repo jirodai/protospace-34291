@@ -31,11 +31,11 @@
 
 ##commentsテーブル
 
-| Column     | type      | option                   |
-| ---------  | --------- | -------------------------|
-| text       | text      | null: false              |
-| user       | reference |                          |
-| concept    | reference |                          |
+| Column     | type       | option                   |
+| ---------  | ---------- | -------------------------|
+| text       | text       | null: false              |
+| user       | references |                          |
+| prototype  | references |                          |
 
 ##association
 - has_many :users
