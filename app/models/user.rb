@@ -4,7 +4,13 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+
   validates :profile, presense: true
   validates :occupation, presense: true
   validates :position, presense: true
+
+
+  has_many :prototypes
+  has_many :comments
+
 end
